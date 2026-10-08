@@ -1,0 +1,112 @@
+/* ============================================================================
+   Legal Division Stylesheet
+   Theme: Executive Dark Matte Docket & Subtle Brass/Vellum Accents
+   ============================================================================ */
+
+body[data-theme="legal"] {
+  background-color: var(--mat-bg-base) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.03) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(212, 175, 55, 0.012) 0%, transparent 100%) !important;
+  min-height: 100vh;
+}
+
+body.theme-light[data-theme="legal"] {
+  background-color: var(--mat-bg-base) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(180, 83, 9, 0.025) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(180, 83, 9, 0.01) 0%, transparent 100%) !important;
+}
+
+.legal-parchment-root {
+  font-family: var(--font-legal);
+}
+
+/* Executive Dark Matte Docket Overrides */
+body:not(.theme-light) .legal-parchment-root .bg-\[\#faf7ee\] {
+  background-color: var(--mat-bg-surface) !important;
+  color: var(--mat-text-primary) !important;
+  border-color: rgba(212, 175, 55, 0.2) !important;
+  box-shadow: var(--mat-shadow-card), var(--mat-highlight-top) !important;
+}
+
+body:not(.theme-light) .legal-parchment-root .text-stone-900 {
+  color: var(--mat-text-primary) !important;
+}
+
+body:not(.theme-light) .legal-parchment-root .text-stone-700,
+body:not(.theme-light) .legal-parchment-root .text-stone-800 {
+  color: #c5c8d2 !important;
+}
+
+body:not(.theme-light) .legal-parchment-root .text-stone-600,
+body:not(.theme-light) .legal-parchment-root .text-stone-500 {
+  color: var(--mat-text-secondary) !important;
+}
+
+body:not(.theme-light) .legal-parchment-root .bg-stone-100,
+body:not(.theme-light) .legal-parchment-root .bg-stone-200,
+body:not(.theme-light) .legal-parchment-root .bg-stone-50 {
+  background-color: var(--mat-bg-inset) !important;
+  color: var(--mat-text-primary) !important;
+  border-color: var(--mat-border-hairline) !important;
+  box-shadow: var(--mat-shadow-inset) !important;
+}
+
+body:not(.theme-light) .legal-parchment-root .border-stone-300,
+body:not(.theme-light) .legal-parchment-root .border-stone-400 {
+  border-color: var(--mat-border-hairline) !important;
+}
+
+body:not(.theme-light) .legal-parchment-root .bg-\[\#8b0000\] {
+  background-color: #5c1818 !important;
+  border: 1px solid rgba(239, 68, 68, 0.25) !important;
+  color: #fee2e2 !important;
+  box-shadow: var(--mat-shadow-card) !important;
+}
+
+body:not(.theme-light) .legal-parchment-root .bg-\[\#8b0000\]:hover {
+  background-color: #6d1d1d !important;
+}
+
+/* Matte Rubber Stamp Effect */
+.legal-stamp {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  text-transform: uppercase;
+  font-family: var(--font-serif-header);
+  font-weight: 700;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  transform: rotate(-2deg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
+body:not(.theme-light) .stamp-approved {
+  color: #6ee7b7 !important;
+  border-color: rgba(52, 211, 153, 0.3) !important;
+  background-color: rgba(52, 211, 153, 0.08) !important;
+}
+
+body:not(.theme-light) .stamp-review {
+  color: #fcd34d !important;
+  border-color: rgba(245, 158, 11, 0.3) !important;
+  background-color: rgba(245, 158, 11, 0.08) !important;
+}
+
+body:not(.theme-light) .stamp-pending {
+  color: #fca5a5 !important;
+  border-color: rgba(239, 68, 68, 0.3) !important;
+  background-color: rgba(239, 68, 68, 0.08) !important;
+}
+
+/* Light Mode Legal Overrides */
+body.theme-light .legal-parchment-root .bg-\[\#faf7ee\] {
+  background-color: #fcfbf7 !important;
+  border-color: #e8e4d9 !important;
+  box-shadow: var(--mat-shadow-card) !important;
+}

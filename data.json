@@ -1,0 +1,522 @@
+{
+  "auth": {
+    "milan": {
+      "name": "Milan Jadhav",
+      "role": "Co-Founder",
+      "code": "BusinessSlut@2167",
+      "avatar": "MJ",
+      "color": "#059669"
+    },
+    "sujan": {
+      "name": "Sujan Akash",
+      "role": "Co-Founder",
+      "code": "PartnerInSlut@1557",
+      "avatar": "SA",
+      "color": "#2563eb"
+    },
+    "currentUser": null
+  },
+  "presence": {
+    "milan": {
+      "isOnline": false,
+      "lastActive": 1790227326076,
+      "currentView": "welcome"
+    },
+    "sujan": {
+      "isOnline": true,
+      "lastActive": 1791444452815,
+      "currentView": "welcome"
+    }
+  },
+  "todos": [
+    {
+      "id": "td-1",
+      "text": "Finalize supplier quotes for initial batch packaging",
+      "assignedTo": "milan",
+      "priority": "high",
+      "completed": false,
+      "dueDate": "2026-10-02",
+      "category": "Operations",
+      "createdAt": "2026-09-23T18:57:17.662Z"
+    },
+    {
+      "id": "td-2",
+      "text": "Review FSSAI / Trade license compliance documentation",
+      "assignedTo": "sujan",
+      "priority": "high",
+      "completed": false,
+      "dueDate": "2026-10-05",
+      "category": "Legal",
+      "createdAt": "2026-09-23T18:57:17.663Z"
+    },
+    {
+      "id": "td-3",
+      "text": "Complete Q4 Seed Run Budget & Burn Rate evaluation",
+      "assignedTo": "team",
+      "priority": "high",
+      "completed": false,
+      "dueDate": "2026-09-30",
+      "category": "Finance",
+      "createdAt": "2026-09-23T18:57:17.663Z"
+    },
+    {
+      "id": "td-4",
+      "text": "Draft brand narrative & product launch hook video scripts",
+      "assignedTo": "milan",
+      "priority": "medium",
+      "completed": true,
+      "dueDate": "2026-09-22",
+      "category": "Marketing",
+      "createdAt": "2026-09-23T18:57:17.663Z"
+    },
+    {
+      "id": "td-5",
+      "text": "Test sample prototype batch #03 stress testing report",
+      "assignedTo": "sujan",
+      "priority": "medium",
+      "completed": false,
+      "dueDate": "2026-10-08",
+      "category": "Operations",
+      "createdAt": "2026-09-23T18:57:17.663Z"
+    },
+    {
+      "id": "td-6",
+      "text": "Setup business banking current account & merchant gateway",
+      "assignedTo": "team",
+      "priority": "high",
+      "completed": false,
+      "dueDate": "2026-10-12",
+      "category": "Finance",
+      "createdAt": "2026-09-23T18:57:17.663Z"
+    }
+  ],
+  "roadmap": [
+    {
+      "id": "rm-1",
+      "stageNumber": 1,
+      "stageName": "Idea Validation & Co-Founder Agreement",
+      "description": "Define equity, strategic roadmap, legal baseline, and primary thesis",
+      "targetDate": "2026-08-30",
+      "completedDate": "2026-08-28",
+      "status": "Completed",
+      "progress": 31
+    },
+    {
+      "id": "rm-2",
+      "stageNumber": 2,
+      "stageName": "R&D Prototype Development & Lab Testing",
+      "description": "Develop initial formulation/product prototypes, lab validation, and stress audits",
+      "targetDate": "2026-10-15",
+      "completedDate": null,
+      "status": "In Progress",
+      "progress": 31
+    },
+    {
+      "id": "rm-3",
+      "stageNumber": 3,
+      "stageName": "Regulatory Compliance & Certifications",
+      "description": "Obtain trade licenses, testing certificates, and brand trademark filings",
+      "targetDate": "2026-11-10",
+      "completedDate": null,
+      "status": "Upcoming",
+      "progress": 25
+    },
+    {
+      "id": "rm-4",
+      "stageNumber": 4,
+      "stageName": "Pilot Batch Production & SKU Setup",
+      "description": "Finalize vendor tooling, pricing matrices, packaging, and warehouse logistics",
+      "targetDate": "2026-12-05",
+      "completedDate": null,
+      "status": "Upcoming",
+      "progress": 0
+    },
+    {
+      "id": "rm-5",
+      "stageNumber": 5,
+      "stageName": "Beta Market Launch & Customer Acquisition",
+      "description": "Omni-channel marketing launch, early adopter cohort, feedback iteration",
+      "targetDate": "2027-01-15",
+      "completedDate": null,
+      "status": "Upcoming",
+      "progress": 0
+    },
+    {
+      "id": "rm-1790227284319",
+      "stageNumber": 6,
+      "progress": 0,
+      "status": "Upcoming",
+      "stageName": "abcs",
+      "description": "dds",
+      "targetDate": "2026-12-15"
+    }
+  ],
+  "finance": {
+    "capital": {
+      "milan": 150000,
+      "sujan": 150000
+    },
+    "inflows": [
+      {
+        "id": "inf-1",
+        "source": "Founder Initial Capital Infusion - Milan",
+        "amount": 150000,
+        "date": "2026-08-15",
+        "paidBy": "milan",
+        "notes": "Seed capital account"
+      },
+      {
+        "id": "inf-2",
+        "source": "Founder Initial Capital Infusion - Sujan",
+        "amount": 150000,
+        "date": "2026-08-15",
+        "paidBy": "sujan",
+        "notes": "Seed capital account"
+      }
+    ],
+    "expenses": [
+      {
+        "id": "exp-1",
+        "title": "Trademark & Legal Entity Registration Fees",
+        "amount": 18500,
+        "category": "Legal & Compliance",
+        "paidBy": "milan",
+        "date": "2026-08-20",
+        "paymentMethod": "UPI / Net Banking",
+        "notes": "Paid to RoC & IP India portal",
+        "receiptImage": null,
+        "createdAt": "2026-08-20T10:30:00Z"
+      },
+      {
+        "id": "exp-2",
+        "title": "Raw Material Prototype Samples Batch #1",
+        "amount": 24600,
+        "category": "R&D & Samples",
+        "paidBy": "sujan",
+        "date": "2026-08-26",
+        "paymentMethod": "Corporate Card",
+        "notes": "Ingredients and chemical assay testing batch",
+        "receiptImage": null,
+        "createdAt": "2026-08-26T14:15:00Z"
+      },
+      {
+        "id": "exp-3",
+        "title": "Industrial Design & 3D Packaging Mockups",
+        "amount": 14000,
+        "category": "Product Design",
+        "paidBy": "milan",
+        "date": "2026-09-02",
+        "paymentMethod": "UPI",
+        "notes": "Freelance 3D visualizer CAD files",
+        "receiptImage": null,
+        "createdAt": "2026-09-02T16:45:00Z"
+      },
+      {
+        "id": "exp-4",
+        "title": "Laboratory Analytical Certificate of Analysis (CoA)",
+        "amount": 16500,
+        "category": "Testing & Certification",
+        "paidBy": "sujan",
+        "date": "2026-09-10",
+        "paymentMethod": "Bank Transfer",
+        "notes": "NABL Accredited testing facility invoice",
+        "receiptImage": null,
+        "createdAt": "2026-09-10T11:20:00Z"
+      },
+      {
+        "id": "exp-5",
+        "title": "Domain, Google Workspace & Cloud Infrastructure",
+        "amount": 5800,
+        "category": "Software & IT",
+        "paidBy": "milan",
+        "date": "2026-09-15",
+        "paymentMethod": "Credit Card",
+        "notes": "Annual hosting, domain and professional email suites",
+        "receiptImage": null,
+        "createdAt": "2026-09-15T09:00:00Z"
+      }
+    ]
+  },
+  "marketing": {
+    "folders": [
+      "Brand & Packaging",
+      "Viral & Social Ads",
+      "Influencer Strategy",
+      "Offline & Retail Popups",
+      "E-Commerce Launch"
+    ],
+    "ideas": [
+      {
+        "id": "mkt-1",
+        "title": "Unboxing Experience with Founders' Handwritten Wax-Sealed Note",
+        "folder": "Brand & Packaging",
+        "description": "Include a distinct numbered authentic message from Milan and Sujan sharing our founding story.",
+        "status": "implementation",
+        "stages": [
+          {
+            "name": "Concept Draft & Copywriting",
+            "completed": true
+          },
+          {
+            "name": "Paper Texture & Wax Stamp Sourcing",
+            "completed": true
+          },
+          {
+            "name": "Sample Print Run & Quality Check",
+            "completed": false
+          },
+          {
+            "name": "Production Rollout for Batch 1",
+            "completed": false
+          }
+        ],
+        "currentStageIndex": 2,
+        "createdAt": "2026-09-01T12:00:00Z"
+      },
+      {
+        "id": "mkt-2",
+        "title": "Behind-The-Scenes Startup Building Vlog Series",
+        "folder": "Viral & Social Ads",
+        "description": "Raw 45-second Reels documenting prototype failures, supplier arguments, and breakthrough moments.",
+        "status": "implementation",
+        "stages": [
+          {
+            "name": "Content Pillar Strategy",
+            "completed": true
+          },
+          {
+            "name": "Film Raw Footage at Lab / Factory",
+            "completed": false
+          },
+          {
+            "name": "Micro-Editing & Sound Design",
+            "completed": false
+          },
+          {
+            "name": "Weekly Release Calendar",
+            "completed": false
+          }
+        ],
+        "currentStageIndex": 1,
+        "createdAt": "2026-09-05T15:30:00Z"
+      },
+      {
+        "id": "mkt-3",
+        "title": "3D Augmented Reality QR Code on Outer Box",
+        "folder": "Brand & Packaging",
+        "description": "Scanning QR launches webAR visual model revealing inner formulation benefits in 3D.",
+        "status": "doubtful",
+        "stages": [],
+        "currentStageIndex": 0,
+        "createdAt": "2026-09-12T10:00:00Z"
+      },
+      {
+        "id": "mkt-4",
+        "title": "Top 50 Niche Micro-Creators Gifting Campaign",
+        "folder": "Influencer Strategy",
+        "description": "Identify 50 high-engagement micro-influencers (<25k followers) for zero-commission raw review seeding.",
+        "status": "dump",
+        "stages": [],
+        "currentStageIndex": 0,
+        "createdAt": "2026-09-18T18:20:00Z"
+      },
+      {
+        "id": "mkt-5",
+        "title": "Billboard campaign in prime commercial tech parks",
+        "folder": "Offline & Retail Popups",
+        "description": "Way too expensive for pre-revenue stage, high CAC risk.",
+        "status": "bin",
+        "stages": [],
+        "currentStageIndex": 0,
+        "createdAt": "2026-09-10T14:00:00Z"
+      }
+    ],
+    "otherIdeas": [
+      {
+        "id": "oth-1",
+        "title": "Founders' Podcast Guest Appearances",
+        "notes": "Pitch Milan & Sujan's origin story on Tier 2 Indian startup podcasts once prototype is ready.",
+        "tags": [
+          "PR",
+          "Founders Brand"
+        ],
+        "date": "2026-09-19"
+      },
+      {
+        "id": "oth-2",
+        "title": "College Campus Ambassador Program",
+        "notes": "Offer verified certification and early product access to select student brand reps.",
+        "tags": [
+          "Community",
+          "Low CAC"
+        ],
+        "date": "2026-09-21"
+      }
+    ],
+    "chatMessages": [
+      {
+        "id": "chat-1",
+        "sender": "milan",
+        "text": "Hey Sujan, check out the new 3D box finish. It looks ultra-premium!",
+        "timestamp": "2026-09-23T14:20:00Z",
+        "emoji": "\ud83d\udd25"
+      },
+      {
+        "id": "chat-2",
+        "sender": "sujan",
+        "text": "Agreed! Lab assay report comes out tomorrow. If it clears, we can lock SKU-001 pricing.",
+        "timestamp": "2026-09-23T14:24:00Z",
+        "emoji": "\ud83d\ude80"
+      },
+      {
+        "id": "chat-1790219290909",
+        "sender": "milan",
+        "text": "Sent reaction \ud83d\udca1",
+        "emoji": "\ud83d\udca1",
+        "timestamp": "2026-09-24T03:08:10.909Z"
+      },
+      {
+        "id": "chat-1790219291961",
+        "sender": "milan",
+        "text": "Sent reaction \ud83d\udca1",
+        "emoji": "\ud83d\udca1",
+        "timestamp": "2026-09-24T03:08:11.961Z"
+      }
+    ],
+    "drawingSnapshot": null
+  },
+  "operations": {
+    "skus": [
+      {
+        "id": "sku-1",
+        "code": "SKU-A1-001",
+        "name": "Prime Performance Elixir - 500ml",
+        "category": "Beverage / Nutrition",
+        "description": "Electrolyte infused botanical adaptogen formula with zero added sugar.",
+        "specs": "Glass bottle 500ml, Amber UV tint, Aluminium screw cap, 12 month shelf life.",
+        "unit": "Bottle",
+        "status": "Prototype Final",
+        "cogs": 68.5,
+        "devCost": 14.2,
+        "packagingCost": 22,
+        "freightCost": 12,
+        "marginPercent": 65,
+        "taxPercent": 18,
+        "retailPrice": 349,
+        "wholesalePrice": 199
+      },
+      {
+        "id": "sku-2",
+        "code": "SKU-A1-002",
+        "name": "Pocket Energy Sachet Pack (10ct)",
+        "category": "Quick Consumption",
+        "description": "Rapid dissolve powder concentrate for on-the-go mental clarity.",
+        "specs": "Multi-layer foil barrier sachet, 10 units in retail dispenser box.",
+        "unit": "Box",
+        "status": "R&D Testing",
+        "cogs": 42,
+        "devCost": 8.5,
+        "packagingCost": 15,
+        "freightCost": 7.5,
+        "marginPercent": 70,
+        "taxPercent": 18,
+        "retailPrice": 249,
+        "wholesalePrice": 139
+      }
+    ]
+  },
+  "legal": {
+    "documents": [
+      {
+        "id": "leg-1",
+        "title": "Private Limited Company Incorporation & RoC SPICe+",
+        "type": "License",
+        "authority": "Ministry of Corporate Affairs (MCA), India",
+        "filingDate": "2026-08-18",
+        "expiryDate": "Permanent (Subject to Annual Filing)",
+        "currentStage": 5,
+        "stages": [
+          "Name Reservation",
+          "SPICe+ Part B Filing",
+          "PAN/TAN Issuance",
+          "Bank Verification",
+          "Certificate of Incorporation Issued"
+        ],
+        "status": "Active",
+        "notes": "CIN received. Articles of Association and MoA executed."
+      },
+      {
+        "id": "leg-2",
+        "title": "Brand Name & Wordmark Trademark Registration (Class 32 & 5)",
+        "type": "License",
+        "authority": "Controller General of Patents, Designs and Trade Marks",
+        "filingDate": "2026-08-25",
+        "expiryDate": "10 Years From Registration",
+        "currentStage": 2,
+        "stages": [
+          "Search & Cleared",
+          "Form TM-A Filed",
+          "Examination Report / Formalities Check",
+          "Journal Publication",
+          "Registration Certificate"
+        ],
+        "status": "Review",
+        "notes": "Trademark application number issued. Under formalities check pass."
+      },
+      {
+        "id": "leg-3",
+        "title": "FSSAI Central Food / Supplement Operating License",
+        "type": "License",
+        "authority": "Food Safety and Standards Authority of India (FSSAI)",
+        "filingDate": "2026-09-08",
+        "expiryDate": "2027-09-07",
+        "currentStage": 3,
+        "stages": [
+          "FoSCoS Application",
+          "Document & Flowchart Verification",
+          "Site Inspection / Auditor Review",
+          "Queries Addressed",
+          "License Grant"
+        ],
+        "status": "Pending",
+        "notes": "Site layout and kitchen/lab hygiene certificate submitted."
+      },
+      {
+        "id": "leg-4",
+        "title": "Toxicology, Heavy Metal & Microbial NABL Lab Testing Report",
+        "type": "Testing",
+        "authority": "NABL Accredited Analytical Laboratories",
+        "filingDate": "2026-09-12",
+        "expiryDate": "Batch Validated",
+        "currentStage": 4,
+        "stages": [
+          "Sample Collection",
+          "Microbiological Culture (7-day)",
+          "Heavy Metal Spectrometry",
+          "Draft Report Review",
+          "Signed Final Certificate"
+        ],
+        "status": "Review",
+        "notes": "Microbial counts well within limits. Awaiting final signed COA."
+      },
+      {
+        "id": "leg-5",
+        "title": "Co-Founders' Operating & Reverse Vesting Agreement",
+        "type": "Agreement",
+        "authority": "Corporate Legal Counsel",
+        "filingDate": "2026-08-16",
+        "expiryDate": "Indefinite",
+        "currentStage": 5,
+        "stages": [
+          "Term Sheet",
+          "Equity & Vesting Draft",
+          "Founder IP Assignment",
+          "Notarization & Stamp Duty",
+          "Executed & Archived"
+        ],
+        "status": "Active",
+        "notes": "Signed by Milan Jadhav and Sujan Akash with 4-year vesting schedule and 1-year cliff."
+      }
+    ]
+  }
+}

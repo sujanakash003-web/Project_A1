@@ -1,0 +1,84 @@
+/* ============================================================================
+   Finance Division Stylesheet
+   Theme: Subtle Matte Slate-Sage Finish
+   ============================================================================ */
+
+body[data-theme="finance"] {
+  background-color: var(--mat-bg-base) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(52, 211, 153, 0.035) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(52, 211, 153, 0.015) 0%, transparent 100%) !important;
+  min-height: 100vh;
+}
+
+body.theme-light[data-theme="finance"] {
+  background-color: var(--mat-bg-base) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(5, 150, 105, 0.03) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(5, 150, 105, 0.015) 0%, transparent 100%) !important;
+}
+
+/* Matte Slate-Sage Cards in Finance */
+body[data-theme="finance"] .bg-emerald-950,
+body[data-theme="finance"] .bg-emerald-950\/90,
+body[data-theme="finance"] .bg-emerald-950\/80,
+body[data-theme="finance"] .bg-emerald-950\/70,
+body[data-theme="finance"] .bg-emerald-950\/60,
+body[data-theme="finance"] .bg-emerald-950\/40,
+body[data-theme="finance"] .bg-emerald-950\/20,
+body[data-theme="finance"] .bg-emerald-950\/10 {
+  background-color: var(--mat-bg-surface) !important;
+  border-color: rgba(52, 211, 153, 0.16) !important;
+  box-shadow: var(--mat-shadow-card), var(--mat-highlight-top) !important;
+}
+
+body[data-theme="finance"] .border-emerald-500\/40,
+body[data-theme="finance"] .border-emerald-500\/30,
+body[data-theme="finance"] .border-emerald-500\/20,
+body[data-theme="finance"] .border-emerald-600\/30,
+body[data-theme="finance"] .border-emerald-800\/50 {
+  border-color: rgba(52, 211, 153, 0.16) !important;
+}
+
+/* Light Mode Finance Surfaces */
+body.theme-light[data-theme="finance"] .bg-emerald-950,
+body.theme-light[data-theme="finance"] .bg-emerald-950\/90,
+body.theme-light[data-theme="finance"] .bg-emerald-950\/80,
+body.theme-light[data-theme="finance"] .bg-emerald-950\/70,
+body.theme-light[data-theme="finance"] .bg-emerald-950\/60,
+body.theme-light[data-theme="finance"] .bg-emerald-950\/40,
+body.theme-light[data-theme="finance"] .bg-emerald-950\/20,
+body.theme-light[data-theme="finance"] .bg-emerald-950\/10 {
+  background-color: #ffffff !important;
+  border-color: #d1fae5 !important;
+  box-shadow: var(--mat-shadow-card) !important;
+}
+
+/* Clean up Floating Rupees to prevent visual noise in Matte theme */
+.rupee-bg-layer {
+  display: none !important;
+}
+
+/* Camera Live Viewfinder - Tactile Matte Frame */
+#camera-viewfinder-box {
+  background-color: #0b0c0e !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: var(--mat-shadow-inset) !important;
+}
+
+#camera-viewfinder-box::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  animation: liveRecordPulse 1.4s infinite;
+}
+
+@keyframes liveRecordPulse {
+  0%, 100% { opacity: 0.9; transform: scale(1); }
+  50% { opacity: 0.25; transform: scale(1.1); }
+}

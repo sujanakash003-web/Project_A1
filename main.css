@@ -1,0 +1,349 @@
+/* ============================================================================
+   Main Application Stylesheet
+   Project A1 - Co-Founder Operating System
+   Theme: Executive Subtle & Matte Finish Design System
+   ============================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-legal: 'Playfair Display', Georgia, serif;
+  --font-serif-header: 'Cinzel', serif;
+  --font-mono: 'Fira Code', 'Share Tech Mono', monospace;
+
+  /* Matte Finish Design Tokens - Dark Mode */
+  --mat-bg-base: #131417;
+  --mat-bg-surface: #181a1f;
+  --mat-bg-surface-raised: #1f2229;
+  --mat-bg-inset: #101114;
+  --mat-border-hairline: rgba(255, 255, 255, 0.075);
+  --mat-border-medium: rgba(255, 255, 255, 0.12);
+  --mat-border-inset: rgba(255, 255, 255, 0.04);
+  --mat-text-primary: #ededf0;
+  --mat-text-secondary: #9da1ab;
+  --mat-text-muted: #656974;
+
+  /* Tactile Low-Reflectance Matte Shadows */
+  --mat-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.28), 0 4px 14px rgba(0, 0, 0, 0.22);
+  --mat-shadow-raised: 0 2px 6px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.28);
+  --mat-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.35);
+  --mat-highlight-top: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--mat-bg-base);
+  color: var(--mat-text-primary);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  position: relative;
+}
+
+/* Subtle Matte Micro-Grain Overlay for non-reflective velvet finish */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.015) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Custom Matte Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mat-bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2e36;
+  border-radius: 9999px;
+  border: 1px solid var(--mat-bg-base);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #393d48;
+}
+
+/* Shake Animation for Invalid Code */
+@keyframes shakeAnim {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.shake-anim {
+  animation: shakeAnim 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* Global Low-Glare Soft Matte Accents (Replaced harsh glowing neons) */
+.glow-emerald,
+.glow-purple,
+.glow-cyan {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), var(--mat-highlight-top) !important;
+}
+
+/* Matte Surface Utility & Structural Mappings */
+.bg-zinc-950,
+.bg-black {
+  background-color: var(--mat-bg-base) !important;
+}
+
+.bg-zinc-900,
+.bg-zinc-900\/90,
+.bg-zinc-900\/80,
+.bg-zinc-900\/70,
+.bg-zinc-900\/60 {
+  background-color: var(--mat-bg-surface) !important;
+  box-shadow: var(--mat-shadow-card), var(--mat-highlight-top);
+}
+
+.bg-zinc-950\/90,
+.bg-zinc-950\/80,
+.bg-zinc-950\/70,
+.bg-zinc-950\/60,
+.bg-zinc-950\/40 {
+  background-color: var(--mat-bg-inset) !important;
+  box-shadow: var(--mat-shadow-inset);
+}
+
+.border-zinc-800,
+.border-zinc-800\/80,
+.border-zinc-800\/60,
+.border-zinc-800\/50,
+.border-zinc-700,
+.border-zinc-700\/80,
+.border-zinc-700\/60 {
+  border-color: var(--mat-border-hairline) !important;
+}
+
+/* Matte Form Inputs */
+input,
+select,
+textarea {
+  background-color: var(--mat-bg-inset) !important;
+  border-color: rgba(255, 255, 255, 0.09) !important;
+  color: var(--mat-text-primary) !important;
+  box-shadow: var(--mat-shadow-inset);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12), var(--mat-shadow-inset) !important;
+  outline: none !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--mat-text-muted) !important;
+}
+
+/* Matte Buttons */
+button {
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bg-zinc-800,
+.bg-zinc-800\/80,
+.bg-zinc-800\/60 {
+  background-color: #21242c !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), var(--mat-highlight-top);
+}
+
+.bg-zinc-800:hover,
+.bg-zinc-800\/80:hover {
+  background-color: #2a2e37 !important;
+}
+
+/* Toast Container */
+#toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  pointer-events: none;
+}
+
+#toast-container > div {
+  pointer-events: auto;
+  box-shadow: var(--mat-shadow-raised), var(--mat-highlight-top);
+  background-color: var(--mat-bg-surface-raised) !important;
+  border: 1px solid var(--mat-border-medium) !important;
+}
+
+/* Top Navbar in Matte Finish */
+#main-nav-bar {
+  background-color: rgba(19, 20, 23, 0.92) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--mat-border-hairline) !important;
+}
+
+/* Modal Surface in Matte Finish */
+#settings-modal > div {
+  background-color: var(--mat-bg-surface-raised) !important;
+  border: 1px solid var(--mat-border-medium) !important;
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.6), var(--mat-highlight-top) !important;
+}
+
+/* ============================================================================
+   LIGHT THEME OVERRIDES (Calm Matte Alabaster / Bone Finish)
+   ============================================================================ */
+
+body.theme-light {
+  --mat-bg-base: #f4f5f8;
+  --mat-bg-surface: #ffffff;
+  --mat-bg-surface-raised: #ffffff;
+  --mat-bg-inset: #ebedf1;
+  --mat-border-hairline: #e2e4e9;
+  --mat-border-medium: #d4d7e0;
+  --mat-border-inset: rgba(0, 0, 0, 0.04);
+  --mat-text-primary: #121418;
+  --mat-text-secondary: #5f6573;
+  --mat-text-muted: #8b919e;
+
+  --mat-shadow-card: 0 1px 3px rgba(0, 0, 0, 0.05), 0 4px 16px rgba(0, 0, 0, 0.03);
+  --mat-shadow-raised: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --mat-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  --mat-highlight-top: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  background-color: var(--mat-bg-base) !important;
+  color: var(--mat-text-primary) !important;
+}
+
+body.theme-light::before {
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 0, 0, 0.015) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, transparent 100%);
+}
+
+body.theme-light ::-webkit-scrollbar-track {
+  background: var(--mat-bg-base);
+}
+
+body.theme-light ::-webkit-scrollbar-thumb {
+  background: #cbd0db;
+  border: 1px solid var(--mat-bg-base);
+}
+
+body.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #b0b7c4;
+}
+
+body.theme-light .bg-zinc-950,
+body.theme-light .bg-black {
+  background-color: var(--mat-bg-base) !important;
+}
+
+body.theme-light .bg-zinc-900,
+body.theme-light .bg-zinc-900\/90,
+body.theme-light .bg-zinc-900\/80,
+body.theme-light .bg-zinc-900\/70,
+body.theme-light .bg-zinc-900\/60 {
+  background-color: var(--mat-bg-surface) !important;
+  box-shadow: var(--mat-shadow-card) !important;
+  border-color: var(--mat-border-hairline) !important;
+}
+
+body.theme-light .bg-zinc-950\/90,
+body.theme-light .bg-zinc-950\/80,
+body.theme-light .bg-zinc-950\/70,
+body.theme-light .bg-zinc-950\/60,
+body.theme-light .bg-zinc-950\/40 {
+  background-color: var(--mat-bg-inset) !important;
+  box-shadow: var(--mat-shadow-inset) !important;
+}
+
+body.theme-light .border-zinc-800,
+body.theme-light .border-zinc-800\/80,
+body.theme-light .border-zinc-800\/60,
+body.theme-light .border-zinc-800\/50,
+body.theme-light .border-zinc-700,
+body.theme-light .border-zinc-700\/80,
+body.theme-light .border-zinc-700\/60 {
+  border-color: var(--mat-border-hairline) !important;
+}
+
+/* Typography in Light Mode */
+body.theme-light .text-white {
+  color: var(--mat-text-primary) !important;
+}
+
+body.theme-light .text-zinc-100 {
+  color: #1a1d22 !important;
+}
+
+body.theme-light .text-zinc-200 {
+  color: #2b303a !important;
+}
+
+body.theme-light .text-zinc-300 {
+  color: var(--mat-text-secondary) !important;
+}
+
+body.theme-light .text-zinc-400 {
+  color: #6a7180 !important;
+}
+
+body.theme-light .text-zinc-500 {
+  color: var(--mat-text-muted) !important;
+}
+
+/* Input Fields in Light Mode */
+body.theme-light input,
+body.theme-light select,
+body.theme-light textarea {
+  background-color: #ffffff !important;
+  color: var(--mat-text-primary) !important;
+  border-color: #d1d5df !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+}
+
+body.theme-light input:focus,
+body.theme-light select:focus,
+body.theme-light textarea:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.12), inset 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+}
+
+body.theme-light input::placeholder,
+body.theme-light textarea::placeholder {
+  color: #9da3af !important;
+}
+
+/* Buttons in Light Mode */
+body.theme-light .bg-zinc-800,
+body.theme-light .bg-zinc-800\/80,
+body.theme-light .bg-zinc-800\/60 {
+  background-color: #eaedf2 !important;
+  color: #1a1d23 !important;
+  border-color: #d8dce4 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+}
+
+body.theme-light .bg-zinc-800:hover,
+body.theme-light .bg-zinc-800\/80:hover {
+  background-color: #dfe3eb !important;
+}
+
+body.theme-light #main-nav-bar {
+  background-color: rgba(244, 245, 248, 0.94) !important;
+  border-bottom-color: var(--mat-border-hairline) !important;
+}

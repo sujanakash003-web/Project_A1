@@ -1,0 +1,65 @@
+/* ============================================================================
+   Operations Division Stylesheet
+   Theme: Subtle Matte Bronze-Slate Finish
+   ============================================================================ */
+
+body[data-theme="operations"] {
+  background-color: var(--mat-bg-base) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.035) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(245, 158, 11, 0.015) 0%, transparent 100%) !important;
+  min-height: 100vh;
+}
+
+body.theme-light[data-theme="operations"] {
+  background-color: var(--mat-bg-base) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(217, 119, 6, 0.03) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(217, 119, 6, 0.015) 0%, transparent 100%) !important;
+}
+
+/* Matte Bronze-Slate Surfaces in Operations */
+body[data-theme="operations"] .bg-amber-950,
+body[data-theme="operations"] .bg-amber-950\/90,
+body[data-theme="operations"] .bg-amber-950\/80,
+body[data-theme="operations"] .bg-amber-950\/40,
+body[data-theme="operations"] .bg-amber-950\/30,
+body[data-theme="operations"] .bg-amber-950\/20,
+body[data-theme="operations"] .bg-amber-950\/10 {
+  background-color: var(--mat-bg-surface) !important;
+  border-color: rgba(245, 158, 11, 0.16) !important;
+  box-shadow: var(--mat-shadow-card), var(--mat-highlight-top) !important;
+}
+
+body[data-theme="operations"] .border-amber-500\/40,
+body[data-theme="operations"] .border-amber-500\/30,
+body[data-theme="operations"] .border-amber-500\/20,
+body[data-theme="operations"] .border-amber-800 {
+  border-color: rgba(245, 158, 11, 0.16) !important;
+}
+
+/* Tactile Matte Operations Badge */
+.ops-flame-badge {
+  background: #252019 !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+  color: #fde68a !important;
+  font-weight: 700;
+  box-shadow: var(--mat-shadow-card), var(--mat-highlight-top) !important;
+}
+
+/* Light Mode Operations Overrides */
+body.theme-light[data-theme="operations"] .bg-amber-950,
+body.theme-light[data-theme="operations"] .bg-amber-950\/90,
+body.theme-light[data-theme="operations"] .bg-amber-950\/80,
+body.theme-light[data-theme="operations"] .bg-amber-950\/30,
+body.theme-light[data-theme="operations"] .bg-amber-950\/20 {
+  background-color: #ffffff !important;
+  border-color: #fef3c7 !important;
+  box-shadow: var(--mat-shadow-card) !important;
+}
+
+body.theme-light .ops-flame-badge {
+  background: #fffbeb !important;
+  border-color: #fde68a !important;
+  color: #b45309 !important;
+}

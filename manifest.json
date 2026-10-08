@@ -1,0 +1,17 @@
+{
+  "name": "Project A1 • Co-Founder OS",
+  "short_name": "Project A1",
+  "description": "Executive Operating System for Co-Founders Milan Jadhav & Sujan Akash",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#131417",
+  "theme_color": "#131417",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
